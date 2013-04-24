@@ -18,6 +18,7 @@ Of cause if you'd like to play with some settings you got two of them too!
 		("ul").ssm({
 			msg: "thanks",
 			letter: 0,
+			wrapper: "b"
 		});
 	</script>
 ```
@@ -27,3 +28,6 @@ Of cause if you'd like to play with some settings you got two of them too!
 * `letter`
 	* So basically it tells the plugin, if we got more of the same letters (From the `msg`, "thanks" in this case), it'll choose the number letter you set `letter` to
 	* But! If you set this to `0`, it'll just select a random letter from the string...
+* `Wrapper`
+	* What to wrap around the letter
+	* In this case it's a `<b>`

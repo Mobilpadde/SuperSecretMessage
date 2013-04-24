@@ -29,7 +29,8 @@
 		ssm: function(o){
 			var defaults = { 
 					msg: "thanks",
-					letter: 0
+					letter: 0,
+					wrapper: "b"
 				},
 				o = $.extend(defaults, o);
 
@@ -61,7 +62,7 @@
 					for(key in letters){
 						var letter = letters[key];
 						if(letter == find[i] && key == index && index != -1){
-							$(n).html($(n).html() + "<b>" + letter + "</b>");
+							$(n).html($(n).html() + "<"+o.wrapper+">" + letter + "</"+o.wrapper+">");
 						}else{
 							$(n).html($(n).html() + letter);
 						}
